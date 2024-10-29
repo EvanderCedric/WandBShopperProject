@@ -13,8 +13,6 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-
         <LinearLayout
             android:layout_below="@id/navBarTop"
             android:id="@+id/buttonCont"
