@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:padding="16dp"
+    tools:context=".LoginPage">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to W&amp;B"
+            android:textSize="50dp"
+            android:textColor="@color/darkerbrown"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/logoPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wblogo"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/usernameTxt"
+            android:layout_width="356dp"
+            android:layout_height="65dp"
+
+            android:layout_below="@id/logoPic"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield_bg"
+
+            android:hint="Enter Username"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            />
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="356dp"
+            android:layout_height="65dp"
+
+            android:layout_below="@id/usernameTxt"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield_bg"
+
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="253dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/passwordTxt"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="@color/lightbrown"
+            android:padding="15dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="21dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+
+</RelativeLayout>
+
+
+

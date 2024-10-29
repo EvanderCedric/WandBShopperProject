@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".HomePage">
+
+    <com.example.projectux.NavBarTop
+        android:id="@+id/navBarTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <com.example.projectux.NavBarBot
+        android:id="@+id/navBarBot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="Welcome to W&amp;B,"
+        android:textColor="@color/darkerbrown"
+        android:textSize="37dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/userCaller"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="User"
+        android:textColor="@color/darkerbrown"
+        android:textSize="37dp"
+        android:textStyle="bold"
+        android:layout_below="@id/welcomeText"
+        />
+    <ImageView
+        android:id="@+id/homeimage"
+        android:layout_width="370dp"
+        android:layout_height="279dp"
+        android:layout_below="@id/userCaller"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/homeimage"
+        />
+
+    <TextView
+        android:id="@+id/shop_description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/homeimage"
+        android:layout_centerHorizontal="true"
+        android:text="W&amp;B Shopper offers a wide range of stylish and high-quality clothing and accessories for men and women. Combining popular trends with timeless classics, ensuring a diverse selection of fashion-forward pieces at your fingertips.\n\n\n Have a look around!"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>

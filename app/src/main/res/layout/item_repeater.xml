@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/pale_krem"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <RelativeLayout
+            android:id="@+id/item_text_detail"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/item_name"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:text="ProductName" />
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:text="Rp. XXX.XXX"
+                android:textSize="20dp"
+                android:layout_above="@+id/item_detail_cont"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/item_detail_cont"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+                <TextView
+                    android:textColor="@color/pale_krem"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u2605"/>
+                <TextView
+                    android:id="@+id/item_rating"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 "/>
+                <TextView
+                    android:id="@+id/item_sold"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="| XXk+ sold"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
